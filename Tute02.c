@@ -19,6 +19,16 @@ Amount = 30 x 50 + (50-30) x 40 = 2300*/
 #include <stdio.h>
 
 int main() {
-  
+  float dist , sum ;
+
+  printf("Enter distence that traveled : ");
+  scanf("%f",&dist);
+  if (dist < 30){
+    sum = dist * 50;
+  }
+  else {
+    sum = ((dist-30)*40) + 50*30 ;
+  }
+printf("total fee is : %.2f",sum);
   return 0;
 }
